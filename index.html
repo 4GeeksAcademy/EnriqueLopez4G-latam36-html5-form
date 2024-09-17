@@ -24,21 +24,21 @@
 					<p>Some fields are missing </p>
 				</div>
 				<div class = "row my-2"> <!-- div numero de que contiene 3 divs para los datos de la tarjeta-->
-				<div class ="col-5 border d-flex flex-column py-3">
+				<div class ="col-5 d-flex flex-column py-3">
 					<label for="card">Card #</label>
 					<input type="text" id="card" name ="card" placeholder="XXXXXXXXXXXX">
 				</div>
 
-				<div class ="col-3 border d-flex flex-column py-3">
-					<label for="card">CVC#</label>
+				<div class ="col-3  d-flex flex-column py-3">
+					<label for="cvc">CVC#</label>
 					<input type="number" id="cvc" name ="cvc" placeholder="0000">
 				</div>
 
-				<div class ="col-4 border d-flex flex-column py-3">
-					<label for="card">Amount</label>
-					<div >
-						<p>$</p>
-						<input type="number" id="amount" name ="amount" placeholder="Amount">
+				<div class ="col-4 d-flex flex-column py-3">
+					<label for="amount">Amount</label>
+					<div class="input-group">
+						<span class="input-group-text">$</span>
+						<input type="number" id="amount" name="amount" class="form-control" placeholder="Amount">
 					</div>
 					
 				</div>
@@ -62,9 +62,9 @@
 					</div>
 
 					<div class ="col-6 mt-3 ms-4">
-						<label for="city">We Accept</label>
+						<label for="cards">We Accept</label>
 
-						<div class="input-group my-3 bg-secondary w-75 ">
+						<div class="input-group my-3 bg-secondary w-75 " id ="cards">
 							<div class="formCheckAccept mx-2 m-2">
 								<input class="form-check-input" type="radio" name="typeCard" id="Card1" value="option1" checked>
 									<i class="fa-brands fa-cc-mastercard"></i>
@@ -97,7 +97,7 @@
 						<div class ="col-6 d-flex flex-column my-3">
 							<label for="state">State</label>
 
-							<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+							<select class="form-select form-select-sm" aria-label=".form-select-sm example" id ="state">
 								<option selected>Pick a state</option>
 								<option value="1">Florida</option>
 								<option value="2">Texas</option>
